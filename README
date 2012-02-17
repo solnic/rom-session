@@ -1,8 +1,8 @@
-Ultra incomplete UoW session.
+Incomplete UoW session.
 
-See (spike spec)[https://github.com/mbj/session/blob/master/spec/spike_spec.rb]
+See specs [https://github.com/mbj/session/blob/master/spec]
 
 TODO:
 
-  * Prepare solnic's (dm-mapper)[https://github.com/solnic/dm-mapper] to be a 
+  * Wrap solnic's (dm-mapper)[https://github.com/solnic/dm-mapper] to be a 
     mapping backend.
