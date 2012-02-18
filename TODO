@@ -1,0 +1,4 @@
+* Add specs for Session#load
+* Simplify session <=> mapper interface
+* Use Code metrics
+* Use Mutation testing
