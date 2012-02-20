@@ -2,3 +2,5 @@
 * Simplify session <=> mapper interface
 * Use Code metrics
 * Use Mutation testing
+* Spec execeptions
+* Add Session#loaded? Session#track? is to general
