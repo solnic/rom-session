@@ -3,4 +3,5 @@
 * Use Code metrics
 * Use Mutation testing
 * Spec execeptions
-* Add Session#loaded? Session#track? is to general
+* Add Session#loaded?, Session#track? is to general
+* Spec Session#load!
