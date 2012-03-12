@@ -23,5 +23,6 @@ Gem::Specification.new do |s|
   s.add_development_dependency('rspec',     '~> 2.9.0.rc2')
   s.add_development_dependency('mapper',    '~> 0.0.2')
   s.add_development_dependency('mongo',     '~> 1.6.1')
+  s.add_development_dependency('bson_ext',  '~> 1.6.1')
   s.add_development_dependency('virtus',    '~> 0.3.0')
 end
