@@ -17,5 +17,8 @@ Gem::Specification.new do |s|
   s.extra_rdoc_files = %w(README)
 
   s.rubygems_version = '1.8.10'
-  s.add_development_dependency('rspec',     '< 2.8.0')
+  s.add_development_dependency('rspec',     '~> 2.9.0.rc2')
+  s.add_development_dependency('mapper',    '~> 0.0.2')
+  s.add_development_dependency('mongo',     '~> 1.6.1')
+  s.add_development_dependency('virtus',    '~> 0.3.0')
 end
