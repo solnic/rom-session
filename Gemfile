@@ -1,4 +1,4 @@
 source :rubyforge
 gemspec
 
-gem 'mapper', :git => 'git@github.com:mbj/mapper'
+gem 'mapper', :git => 'http://github.com/mbj/mapper.git'
