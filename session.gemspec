@@ -20,8 +20,10 @@ Gem::Specification.new do |s|
   if RUBY_VERSION < '1.9'
     s.add_dependency('backports')
   end
-  s.add_development_dependency('rspec',     '~> 2.9.0.rc2')
-  s.add_development_dependency('mapper',    '~> 0.0.2')
-  s.add_development_dependency('mongo',     '~> 1.6.1')
-  s.add_development_dependency('virtus',    '~> 0.3.0')
+  s.add_development_dependency('mapper',        '~> 0.0.2')
+  s.add_development_dependency('mongo',         '~> 1.6.2')
+  s.add_development_dependency('virtus',        '~> 0.4.2')
+  s.add_development_dependency('rake',        '~> 0.9.2')
+  s.add_development_dependency('rspec',       '~> 1.3.2')
+  s.add_development_dependency('guard-rspec', '~> 0.7.0')
 end
