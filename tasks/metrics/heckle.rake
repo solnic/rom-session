@@ -169,7 +169,6 @@ begin
         puts "Heckling #{mod}#{method}"
         IO.popen("spec #{spec_files.join(' ')} --heckle '#{mod}#{method}'") do |pipe|
           while line = pipe.gets
-            puts line
             case line = line.chomp
               when "The following mutations didn't cause test failures:"
                 heckle_caught_modules[mod.name] << method
