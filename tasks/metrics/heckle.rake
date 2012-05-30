@@ -36,9 +36,7 @@ begin
 
     require 'session'
 
-    root_module_regexp = Regexp.union(
-      'Session::Session'
-    )
+    root_module_regexp = Regexp.union('Session')
 
     spec_dir = Pathname('spec/unit')
 

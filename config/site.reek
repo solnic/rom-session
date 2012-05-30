@@ -7,10 +7,9 @@ UncommunicativeParameterName:
   - !ruby/regexp /[0-9]$/
   - !ruby/regexp /[A-Z]/
 LargeClass:
-  max_methods: 11
+  max_methods: 13
   enabled: true
-  exclude: 
-  - Session::Session
+  exclude: []
   max_instance_variables: 3
 UncommunicativeMethodName:
   accept: []
@@ -26,8 +25,7 @@ LongParameterList:
   enabled: true
   overrides: {}
 FeatureEnvy:
-  exclude: [
-  ]
+  exclude: []
   enabled: true
 ClassVariable:
   exclude: []
@@ -49,21 +47,19 @@ NestedIterators:
   ignore_iterators: []
   exclude: []
   enabled: true
-  max_allowed_nesting: 2
+  max_allowed_nesting: 1
 LongMethod:
-  max_statements: 6
+  max_statements: 5
   exclude: []
   enabled: true
 Duplication:
   allow_calls: []
-  exclude: [
-  ]
+  exclude: []
   enabled: true
   max_calls: 1
 UtilityFunction:
   max_helper_calls: 1
-  exclude: [
-  ]
+  exclude: []
   enabled: true
 Attribute:
   exclude: []
@@ -78,19 +74,16 @@ UncommunicativeVariableName:
   - !ruby/regexp /[A-Z]/
 SimulatedPolymorphism:
   enabled: true
-  # Fix Session::Session#track? usage
-  max_ifs: 4
+  max_ifs: 1
 DataClump:
-  exclude: [
-  ]
+  exclude: []
   enabled: true
-  max_copies: 2
+  max_copies: 0
   min_clump_size: 2
 ControlCouple:
-  exclude: [
-  ]
+  exclude: []
   enabled: true
 LongYieldList:
-  max_params: 1
+  max_params: 0
   exclude: []
   enabled: true
