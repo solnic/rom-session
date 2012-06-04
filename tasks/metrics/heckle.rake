@@ -47,8 +47,6 @@ begin
 
     aliases = Hash.new { |h,mod| h[mod] = Hash.new { |h,method| h[method] = method } }
 
-    aliases['Session::Session']['<<']= 'persist'
-
     map     = NameMap.new
 
     heckle_caught_modules = Hash.new { |hash, key| hash[key] = [] }
