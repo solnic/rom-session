@@ -1,2 +1,1 @@
-* Add Session#loaded?, Session#track? is to general?
-* Fix instance variable reflection in Operation::Update
+* Split lib/session/object_state.rb into subclass specific files
