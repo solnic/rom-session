@@ -34,6 +34,7 @@ begin
       raise "ruby2ruby version #{Ruby2Ruby::VERSION} may not work properly, 1.2.2 *only* is recommended for use with heckle"
     end
 
+
     require 'session'
 
     root_module_regexp = Regexp.union('Session')
@@ -170,6 +171,7 @@ begin
         puts "Heckling #{mod}#{method}"
         IO.popen("spec #{spec_files.join(' ')} --heckle '#{mod}#{method}'") do |pipe|
           while line = pipe.gets
+            puts line
             case line = line.chomp
               when "The following mutations didn't cause test failures:"
                 heckle_caught_modules[mod.name] << method
@@ -206,7 +208,7 @@ begin
     end
   end
 rescue LoadError
-  task :heckle do
-    abort 'Heckle or mspec is not available. In order to run heckle, you must: gem install heckle mspec'
+  task :heckle => :spec do
+    $stderr.puts 'Heckle or mspec is not available. In order to run heckle, you must: gem install heckle mspec'
   end
 end

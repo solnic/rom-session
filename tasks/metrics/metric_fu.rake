@@ -1,5 +1,6 @@
 begin
-  # Load veritas before AS. 
+  # This require is needed since metric foo pulls 
+  # activesupport core extensions that will badly inference with veritas....
   require 'veritas'
   require 'metric_fu'
   require 'json'
@@ -25,7 +26,7 @@ begin
 rescue LoadError
   namespace :metrics do
     task :all do
-      abort 'metric_fu is not available. In order to run metrics:all, you must: gem install metric_fu'
+      $stderr.puts 'metric_fu is not available. In order to run metrics:all, you must: gem install metric_fu'
     end
   end
 end
