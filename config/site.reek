@@ -21,7 +21,8 @@ UncommunicativeMethodName:
   - !ruby/regexp /[A-Z]/
 LongParameterList:
   max_params: 2
-  exclude: [ "Session::Session#read" ]
+  exclude: 
+    - "Session::ObjectState::Loaded#initialize" # 4 params
   enabled: true
   overrides: {}
 FeatureEnvy:

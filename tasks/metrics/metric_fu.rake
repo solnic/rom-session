@@ -1,4 +1,6 @@
 begin
+  # Load veritas before AS. 
+  require 'veritas'
   require 'metric_fu'
   require 'json'
 

@@ -1,0 +1,1 @@
+* Remove veritas runtime dep once Veritas::Immutable and Veritas::Aliasable is in a support gem.

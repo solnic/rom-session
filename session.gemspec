@@ -17,12 +17,13 @@ Gem::Specification.new do |s|
   s.extra_rdoc_files = %w(README)
 
   s.rubygems_version = '1.8.10'
-  if RUBY_VERSION < '1.9'
-    s.add_dependency('backports')
-  end
+  s.add_dependency('backports')
+  # Will be removed once we have Veritas::Immutable in a support gem
+  s.add_dependency('veritas', '~> 0.0.7')
+
   s.add_development_dependency('mapper',        '~> 0.0.2')
   s.add_development_dependency('mongo',         '~> 1.6.2')
-  s.add_development_dependency('virtus',        '~> 0.4.2')
+  s.add_development_dependency('virtus',        '~> 0.5.1')
   s.add_development_dependency('rake',        '~> 0.9.2')
   s.add_development_dependency('rspec',       '~> 1.3.2')
   s.add_development_dependency('guard-rspec', '~> 0.7.0')

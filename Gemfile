@@ -2,6 +2,14 @@ source :rubyforge
 
 gemspec
 
+gem 'veritas', :git => 'https://github.com/dkubb/veritas.git'
+
+group :guard do
+  gem 'guard',         '~> 1.1.1'
+  gem 'guard-bundler', '~> 0.1.3'
+  gem 'guard-rspec',   '~> 0.7.3'
+end
+
 group :development do
   gem 'mapper', :git => 'http://github.com/mbj/mapper.git'
   gem 'rake'
