@@ -21,7 +21,7 @@ gem 'session', :git => 'https://github.com/mbj/session'
 Examples
 --------
 
-See spec/integration/**/*_spec.rb
+Project does not have a public api currently.
 
 Credits
 -------
