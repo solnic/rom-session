@@ -2,6 +2,8 @@ session
 ========
 
 [![Build Status](https://secure.travis-ci.org/mbj/session.png?branch=master)](http://travis-ci.org/mbj/session)
+[![Dependency Status](https://gemnasium.com/mbj/session.png)](https://gemnasium.com/mbj/session)
+[![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/mbj/session)
 
 State machine for connecting a business object with a database record.
 
