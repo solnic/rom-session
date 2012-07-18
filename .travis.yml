@@ -7,7 +7,7 @@ rvm:
   - 1.9.2
   - 1.9.3
   #- jruby-18mode blacklisted for crash on travis http://travis-ci.org/#!/mbj/session/jobs/1846734
-  - jruby-19mode 
+  #- jruby-19mode blacklisted for crash on travis http://travis-ci.org/#!/mbj/session/jobs/1896117
   - rbx-18mode
   - rbx-19mode
 notifications:
