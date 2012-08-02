@@ -2,7 +2,7 @@ source :rubyforge
 
 gemspec
 
-gem 'veritas', :git => 'https://github.com/dkubb/veritas.git'
+gem 'immutable', :git => 'https://github.com/mbj/immutable.git'
 
 group :guard do
   gem 'guard',         '~> 1.1.1'
