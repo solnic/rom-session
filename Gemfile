@@ -2,7 +2,7 @@ source :rubyforge
 
 gemspec
 
-gem 'immutable', :git => 'https://github.com/mbj/immutable.git'
+gem 'immutable', :git => 'https://github.com/dkubb/immutable.git', :branch => :experimental
 
 group :guard do
   gem 'guard',         '~> 1.1.1'
