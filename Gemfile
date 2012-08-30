@@ -2,7 +2,7 @@ source :rubyforge
 
 gemspec
 
-gem 'immutable', :git => 'https://github.com/dkubb/immutable.git', :branch => :experimental
+gem 'immutable',           :git => 'https://github.com/dkubb/immutable.git', :branch => :experimental
 
 group :guard do
   gem 'guard',         '~> 1.1.1'
@@ -11,7 +11,6 @@ group :guard do
 end
 
 group :development do
-  gem 'mapper', :git => 'http://github.com/mbj/mapper.git'
   gem 'rake'
 end
 
