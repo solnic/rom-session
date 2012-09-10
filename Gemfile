@@ -9,6 +9,9 @@ group :guard do
   gem 'guard',         '~> 1.3.2'
   gem 'guard-bundler', '~> 0.1.3'
   gem 'guard-rspec',   '~> 0.7.3'
+  # Remove this once https://github.com/nex3/rb-inotify/pull/20 is solved.
+  # This patch makes rb-inotify a nice player with listen so it does not poll.
+  gem 'rb-inotify', :git => 'https://github.com/mbj/rb-inotify'
 end
 
 group :development do
