@@ -2,10 +2,11 @@ source :rubyforge
 
 gemspec
 
-gem 'immutable',           :git => 'https://github.com/dkubb/immutable.git', :branch => :experimental
+gem 'immutable',      :git => 'https://github.com/dkubb/immutable.git',      :branch => :experimental
+gem 'abstract_class', :git => 'https://github.com/dkubb/abstract_class.git'
 
 group :guard do
-  gem 'guard',         '~> 1.1.1'
+  gem 'guard',         '~> 1.3.2'
   gem 'guard-bundler', '~> 0.1.3'
   gem 'guard-rspec',   '~> 0.7.3'
 end
