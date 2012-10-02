@@ -2,7 +2,8 @@ source :rubyforge
 
 gemspec
 
-gem 'immutable',      :git => 'https://github.com/dkubb/immutable.git',      :branch => :experimental
+gem 'immutable',      :git => 'https://github.com/dkubb/immutable.git', :branch => :experimental
+gem 'equalizer',      :git => 'https://github.com/dkubb/equalizer.git'
 gem 'abstract_class', :git => 'https://github.com/dkubb/abstract_class.git'
 
 group :guard do

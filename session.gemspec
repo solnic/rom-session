@@ -19,6 +19,7 @@ Gem::Specification.new do |s|
   s.rubygems_version = '1.8.10'
   s.add_dependency('backports')
   s.add_dependency('immutable', '~> 0.0.1')
+  s.add_dependency('equalizer', '~> 0.0.1')
 
   #s.add_development_dependency('mapper',        '~> 0.0.2')
   s.add_development_dependency('rake',        '~> 0.9.2')
