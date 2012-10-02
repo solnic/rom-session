@@ -17,7 +17,7 @@ Gem::Specification.new do |s|
   s.extra_rdoc_files = %w(README.md TODO)
 
   s.rubygems_version = '1.8.10'
-  s.add_dependency('backports')
+  s.add_dependency('backports', '~> 2.6.4')
   s.add_dependency('immutable', '~> 0.0.1')
   s.add_dependency('equalizer', '~> 0.0.1')
 end
