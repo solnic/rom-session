@@ -20,8 +20,4 @@ Gem::Specification.new do |s|
   s.add_dependency('backports')
   s.add_dependency('immutable', '~> 0.0.1')
   s.add_dependency('equalizer', '~> 0.0.1')
-
-  #s.add_development_dependency('mapper',        '~> 0.0.2')
-  s.add_development_dependency('rake',        '~> 0.9.2')
-  s.add_development_dependency('rspec',       '~> 1.3.2')
 end
