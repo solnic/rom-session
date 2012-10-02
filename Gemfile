@@ -7,16 +7,18 @@ gem 'equalizer',      :git => 'https://github.com/dkubb/equalizer.git'
 gem 'abstract_class', :git => 'https://github.com/dkubb/abstract_class.git'
 
 group :guard do
-  gem 'guard',         '~> 1.3.2'
-  gem 'guard-bundler', '~> 0.1.3'
-  gem 'guard-rspec',   '~> 0.7.3'
-  # Remove this once https://github.com/nex3/rb-inotify/pull/20 is solved.
-  # This patch makes rb-inotify a nice player with listen so it does not poll.
-  gem 'rb-inotify', :git => 'https://github.com/mbj/rb-inotify'
+  gem 'guard'
+  gem 'guard-rspec'
+  gem 'guard-bundler'
+  gem 'rb-inotify', :git => 'https://github.com/mbj/rb-inotify.git'
 end
 
-group :development do
+group :test, :development do
   gem 'rake'
+  gem 'rspec'
+  gem 'rspec-core'
+  gem 'rspec-mocks'
+  gem 'rspec-expectations'
 end
 
 group :metrics do
@@ -30,7 +32,6 @@ group :metrics do
   gem 'yardstick',   '~> 0.4.0'
 
   platforms :mri_18 do
-    gem 'heckle',    '~> 1.4.3'
     gem 'json',      '~> 1.6.4'
     gem 'metric_fu', '~> 2.1.1'
     gem 'mspec',     '~> 1.5.17'
