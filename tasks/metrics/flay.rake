@@ -1,5 +1,5 @@
 begin
-  if RUBY_VERSION == '1.8.7' 
+  if RUBY_VERSION == '1.9.3' 
     require 'flay'
     require 'yaml'
 
@@ -37,7 +37,7 @@ begin
     end
   else
     task :flay do
-      $stderr.puts 'Flay has inconsistend results accros ruby implementations. It is only enabled on 1.8.7, fix and remove guard'
+      $stderr.puts 'Flay has inconsistend results accros ruby implementations. It is only enabled on 1.9.3, fix and remove guard'
     end
   end
 rescue LoadError
