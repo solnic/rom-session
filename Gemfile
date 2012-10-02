@@ -22,12 +22,9 @@ group :test, :development do
 end
 
 group :metrics do
-  gem 'fattr',       '~> 2.2.0'
-  gem 'arrayfields', '~> 4.7.4'
   gem 'flay',        '~> 1.4.2'
   gem 'flog',        '~> 2.5.1'
-  gem 'map',         '~> 5.2.0'
   gem 'reek',        '~> 1.2.8', :git => 'https://github.com/dkubb/reek.git'
   gem 'roodi',       '~> 2.1.0'
-  gem 'yardstick',   '~> 0.4.0'
+  gem 'yardstick',   '~> 0.5.0'
 end
