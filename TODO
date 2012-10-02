@@ -1,2 +1,1 @@
-* Remove veritas runtime dep once Veritas::Immutable and Veritas::Aliasable is in a support gem.
 * Add class_method/new_spec for frozen objects 
