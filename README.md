@@ -1,9 +1,9 @@
 session
 ========
 
-[![Build Status](https://secure.travis-ci.org/mbj/session.png?branch=master)](http://travis-ci.org/mbj/session)
-[![Dependency Status](https://gemnasium.com/mbj/session.png)](https://gemnasium.com/mbj/session)
-[![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/mbj/session)
+[![Build Status](https://secure.travis-ci.org/mbj/dm-session.png?branch=master)](http://travis-ci.org/mbj/dm-session)
+[![Dependency Status](https://gemnasium.com/mbj/dm-session.png)](https://gemnasium.com/mbj/dm-session)
+[![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/mbj/dm-session)
 
 State machine for connecting a business object with a database record.
 
@@ -17,7 +17,7 @@ Installation
 In your **Gemfile**
 
 ``` ruby
-gem 'session', :git => 'https://github.com/mbj/session'
+gem 'session', :git => 'https://github.com/mbj/dm-session'
 ```
 
 Examples

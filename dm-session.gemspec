@@ -1,15 +1,15 @@
 # -*- encoding: utf-8 -*-
-require File.expand_path('../lib/session/version', __FILE__)
+require File.expand_path('../lib/dm-session/version', __FILE__)
 
 Gem::Specification.new do |s|
-  s.name = 'session'
+  s.name = 'dm-session'
   s.version = Session::VERSION.dup
 
   s.authors  = ['Markus Schirp']
   s.email    = 'mbj@seonic.net'
   s.date     = '2012-02-14'
-  s.summary  = 'Agnostic UoW Session'
-  s.homepage = 'http://github.com/mbj/session'
+  s.summary  = 'State machine for object persistence'
+  s.homepage = 'http://github.com/mbj/dm-session'
 
   s.files            = `git ls-files`.split("\n")
   s.test_files       = `git ls-files -- {spec,features}/*`.split("\n")
