@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Session::State, '#delete' do
+describe DataMapper::State, '#delete' do
   subject { object.delete }
 
   let(:class_under_test) do
@@ -14,6 +14,6 @@ describe Session::State, '#delete' do
   let(:domain_object) { DomainObject.new(:foo, :bar) }
 
   it 'should raise StateError' do
-    expect { subject }.to raise_error(Session::StateError, "TestClassName cannot be deleted")
+    expect { subject }.to raise_error(DataMapper::StateError, "TestClassName cannot be deleted")
   end
 end

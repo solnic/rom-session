@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Session::State::Loaded, '#delete' do
+describe DataMapper::State::Loaded, '#delete' do
   let!(:object)        { described_class.new(mapper, domain_object) }
   let(:mapper)        { DummyMapper.new                           }
   let(:domain_object) { DomainObject.new(:foo, :bar) }
@@ -27,7 +27,7 @@ describe Session::State::Loaded, '#delete' do
 
   it 'should return State::Forgotten' do
     state = subject
-    state.should be_kind_of(Session::State::Forgotten)
+    state.should be_kind_of(DataMapper::State::Forgotten)
     state.object.should be(domain_object)
   end
 end

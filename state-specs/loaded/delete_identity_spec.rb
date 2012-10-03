@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Session::State::Loaded, '#delete_identity' do
+describe DataMapper::State::Loaded, '#delete_identity' do
   let(:object)        { described_class.new(mapper, domain_object) }
   let(:mapper)        { DummyMapper.new                           }
   let(:domain_object) { DomainObject.new(:foo, :bar) }

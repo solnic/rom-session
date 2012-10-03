@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Session::State, '#persist' do
+describe DataMapper::State, '#persist' do
   subject { object.persist }
 
   let(:class_under_test) do
@@ -15,6 +15,6 @@ describe Session::State, '#persist' do
 
 
   it 'should raise StateError' do
-    expect { subject }.to raise_error(Session::StateError, 'TestClass cannot be persisted')
+    expect { subject }.to raise_error(DataMapper::StateError, 'TestClass cannot be persisted')
   end
 end

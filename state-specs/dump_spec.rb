@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Session::State, '#dump' do
+describe DataMapper::State, '#dump' do
   subject { object.dump }
 
   let(:class_under_test) do

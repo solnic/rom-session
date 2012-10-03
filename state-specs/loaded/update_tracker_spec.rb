@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Session::State::Loaded, '#update_tracker' do
+describe DataMapper::State::Loaded, '#update_tracker' do
   let(:tracker)       { {} }
 
   let(:object)        { described_class.new(mapper, domain_object) }

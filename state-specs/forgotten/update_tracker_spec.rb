@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Session::State::Forgotten, '#update_tracker' do
+describe DataMapper::State::Forgotten, '#update_tracker' do
   subject { object.update_tracker(tracker) }
 
   let(:key)           { mapper.dump_key(domain_object)         }

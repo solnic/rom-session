@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Session::State, '#forget' do
+describe DataMapper::State, '#forget' do
   subject { object.forget }
 
   let(:class_under_test) do
@@ -16,6 +16,6 @@ describe Session::State, '#forget' do
 
 
   it 'should raise StateError' do
-    expect { subject }.to raise_error(Session::StateError, 'TestClass cannot be forgotten')
+    expect { subject }.to raise_error(DataMapper::StateError, 'TestClass cannot be forgotten')
   end
 end

@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Session::State::New, '#persist' do
+describe DataMapper::State::New, '#persist' do
   let(:object)        { described_class.new(mapper, domain_object) }
   let(:mapper)        { DummyMapper.new                           }
   let(:domain_object) { DomainObject.new(:foo, :bar) }
@@ -16,7 +16,7 @@ describe Session::State::New, '#persist' do
 
   it 'should return loaded state' do
     state = subject
-    state.should be_kind_of(Session::State::Loaded)
+    state.should be_kind_of(DataMapper::State::Loaded)
     state.object.should be(domain_object)
     state.instance_variable_get(:@mapper).should be(mapper)
   end

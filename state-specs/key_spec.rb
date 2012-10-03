@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Session::State, '#key' do
+describe DataMapper::State, '#key' do
   subject { object.key }
 
   let(:class_under_test) { Class.new(described_class) }

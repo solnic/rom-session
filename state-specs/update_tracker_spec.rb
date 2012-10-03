@@ -1,6 +1,6 @@
 require 'spec_helper'
 
-describe Session::State, '#update_tracker' do
+describe DataMapper::State, '#update_tracker' do
   subject { object.update_tracker(tracker) }
 
   let(:class_under_test) { Class.new(described_class)                  }
