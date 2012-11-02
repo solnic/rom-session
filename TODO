@@ -1,1 +1,2 @@
 * Add class_method/new_spec for frozen objects 
+* Get a rid of DataMapper::Session::Identity and delegate identity to mappers!
