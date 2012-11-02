@@ -1,9 +1,8 @@
 # -*- encoding: utf-8 -*-
-require File.expand_path('../lib/version', __FILE__)
 
 Gem::Specification.new do |s|
   s.name = 'dm-session'
-  s.version = DataMapper::Session::VERSION.dup
+  s.version  = '0.0.0'
 
   s.authors  = ['Markus Schirp']
   s.email    = 'mbj@seonic.net'
