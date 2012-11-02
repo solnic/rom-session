@@ -2,7 +2,7 @@ source :rubyforge
 
 gemspec
 
-gem 'adamantium',     :git => 'https://github.com/mbj/adamantium.git', :branch => :'no-deep-freeze-etc'
+gem 'adamantium',     :git => 'https://github.com/mbj/adamantium.git', :branch => :'configurable-freezers'
 gem 'equalizer',      :git => 'https://github.com/dkubb/equalizer.git'
 gem 'abstract_class', :git => 'https://github.com/dkubb/abstract_class.git'
 
