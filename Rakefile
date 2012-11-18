@@ -1,6 +1,5 @@
 require 'rake'
 
-FileList['tasks/**/*.rake'].each { |task| import task }
+require 'devtools'
 
-desc 'Default: run all specs'
-task :default => :spec
+Devtools.init
