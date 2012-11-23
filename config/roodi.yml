@@ -1,6 +1,5 @@
 ---
-AbcMetricMethodCheck:           
-  score: 5.4
+AbcMetricMethodCheck:            { score: 6.33    }
 AssignmentInConditionalCheck:    { }
 CaseMissingElseCheck:            { }
 ClassLineCountCheck:             { line_count: 268 }
