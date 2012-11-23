@@ -9,7 +9,8 @@ UncommunicativeParameterName:
 LargeClass:
   max_methods: 12
   enabled: true
-  exclude: []
+  exclude: 
+  - DataMapper::Session::State
   max_instance_variables: 3
 UncommunicativeMethodName:
   accept: []
