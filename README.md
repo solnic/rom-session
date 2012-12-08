@@ -1,15 +1,11 @@
 session
 ========
 
-[![Build Status](https://secure.travis-ci.org/mbj/dm-session.png?branch=master)](http://travis-ci.org/mbj/dm-session)
-[![Dependency Status](https://gemnasium.com/mbj/dm-session.png)](https://gemnasium.com/mbj/dm-session)
-[![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/mbj/dm-session)
+[![Build Status](https://secure.travis-ci.org/datamapper/dm-session.png?branch=master)](http://travis-ci.org/datamapper/dm-session)
+[![Dependency Status](https://gemnasium.com/datamapper/dm-session.png)](https://gemnasium.com/datamapper/dm-session)
+[![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/datamapper/dm-session)
 
 State machine for connecting a business object with a database record.
-
-This component does fit into the DM-2 ecosystem, somehow.
-
-This is not THE [DM2.0 dm-mapper](http://github.com/solnic/dm-mapper)
 
 Installation
 ------------
@@ -23,7 +19,7 @@ gem 'session', :git => 'https://github.com/mbj/dm-session'
 Examples
 --------
 
-Project does not have a public api currently.
+Project does not have a stable public API currently.
 
 Credits
 -------
