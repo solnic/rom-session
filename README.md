@@ -24,7 +24,7 @@ Project does not have a stable public API currently.
 Credits
 -------
 
-* [mbj](https://github.com/mbj)
+* [mbj](https://github.com/mbj) Markus Schirp
 
 Contributing
 -------------
