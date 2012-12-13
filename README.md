@@ -13,7 +13,7 @@ Installation
 In your **Gemfile**
 
 ``` ruby
-gem 'session', :git => 'https://github.com/mbj/dm-session'
+gem 'session', :git => 'https://github.com/datamapper/dm-session'
 ```
 
 Examples
