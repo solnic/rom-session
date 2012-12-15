@@ -2,8 +2,9 @@ require 'backports'
 require 'adamantium'
 require 'equalizer'
 require 'abstract_type'
+require 'dm-mapper'
 
-# Namespace module 
+# Namespace module
 module DataMapper
   class Session
     # Exception thrown on illegal state
@@ -19,3 +20,4 @@ require 'data_mapper/session/operand'
 require 'data_mapper/session/work'
 require 'data_mapper/session/work/interceptor'
 require 'data_mapper/session/registry'
+
