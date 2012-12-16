@@ -5,7 +5,7 @@ module DataMapper
       include Adamantium::Flat, Equalizer.new(:index)
 
       # Return index
-      # 
+      #
       # @return [Hash]
       #
       # @api private
