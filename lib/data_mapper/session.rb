@@ -27,9 +27,9 @@ module DataMapper
     # @api public
     #
     def reader(model)
-      mapper = @registry.resolve_model(model)
-      Reader.new(self, mapper) 
+      Reader.build(self, registry.resolve_model(model))
     end
+    alias_method :[], :reader
 
     # Delete a domain object from database and forget it
     #
@@ -157,7 +157,7 @@ module DataMapper
         state = State.new(mapper, loader.object)
         store(state)
       end
-      
+
       state.object
     end
 
