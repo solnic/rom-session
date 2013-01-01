@@ -49,7 +49,7 @@ NestedIterators:
   enabled: true
   max_allowed_nesting: 1
 LongMethod:
-  max_statements: 6
+  max_statements: 7
   exclude: []
   enabled: true
 Duplication:
