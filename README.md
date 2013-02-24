@@ -3,7 +3,7 @@ session
 
 [![Build Status](https://secure.travis-ci.org/datamapper/dm-session.png?branch=master)](http://travis-ci.org/datamapper/dm-session)
 [![Dependency Status](https://gemnasium.com/datamapper/dm-session.png)](https://gemnasium.com/datamapper/dm-session)
-[![Code Climate](https://codeclimate.com/badge.png)](https://codeclimate.com/github/datamapper/dm-session)
+[![Code Climate](https://codeclimate.com/github/datamapper/dm-session.png)](https://codeclimate.com/github/datamapper/dm-session)
 
 State machine for connecting a business object with a database record.
 
