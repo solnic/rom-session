@@ -1,5 +1,9 @@
 Gemfile.lock
-.*
-coverage
-profiling
-tmp
+*.rbx
+*.rbc
+.yardoc/
+doc/
+measurements/
+coverage/
+profiling/
+tmp/
