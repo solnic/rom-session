@@ -16,3 +16,6 @@ notifications:
   irc: "irc.freenode.org#datamapper"
   email:
     - mbj@seonic.net
+matrix:
+  allow_failures:
+    - rvm: jruby-head # Bug in YARD/jruby https://travis-ci.org/datamapper/dm-session/jobs/5442683
