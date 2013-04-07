@@ -6,7 +6,7 @@ UncommunicativeParameterName:
   - !ruby/regexp /^.$/
   - !ruby/regexp /[0-9]$/
   - !ruby/regexp /[A-Z]/
-LargeClass:
+TooManyMethods:
   max_methods: 12
   enabled: true
   exclude: []
@@ -48,11 +48,11 @@ NestedIterators:
   exclude: []
   enabled: true
   max_allowed_nesting: 1
-LongMethod:
+TooManyStatements:
   max_statements: 7
   exclude: []
   enabled: true
-Duplication:
+DuplicateMethodCall:
   allow_calls: []
   exclude: []
   enabled: true
@@ -72,7 +72,7 @@ UncommunicativeVariableName:
   - !ruby/regexp /^.$/
   - !ruby/regexp /[0-9]$/
   - !ruby/regexp /[A-Z]/
-SimulatedPolymorphism:
+RepeatedConditional:
   enabled: true
   max_ifs: 1
 DataClump:
@@ -80,7 +80,7 @@ DataClump:
   enabled: true
   max_copies: 0
   min_clump_size: 2
-ControlCouple:
+ControlParameter:
   exclude: []
   enabled: true
 LongYieldList:
