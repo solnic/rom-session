@@ -1,12 +1,11 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = 'dm-session'
+  s.name = 'rom-session'
   s.version  = '0.0.1'
 
   s.authors  = ['Markus Schirp']
-  s.email    = 'mbj@seonic.net'
-  s.date     = '2012-02-14'
+  s.email    = 'mbj@schirp-dso.com'
   s.summary  = 'State machine for object persistence'
   s.homepage = 'http://github.com/rom-rb/rom-session'
 
