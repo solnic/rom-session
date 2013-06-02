@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.email    = 'mbj@seonic.net'
   s.date     = '2012-02-14'
   s.summary  = 'State machine for object persistence'
-  s.homepage = 'http://github.com/mbj/dm-session'
+  s.homepage = 'http://github.com/rom-rb/rom-session'
 
   s.files            = `git ls-files`.split("\n")
   s.test_files       = `git ls-files -- {spec,features}/*`.split("\n")
