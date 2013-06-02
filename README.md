@@ -1,9 +1,9 @@
 session
 ========
 
-[![Build Status](https://secure.travis-ci.org/rom-rb/dm-session.png?branch=master)](http://travis-ci.org/rom-rb/dm-session)
-[![Dependency Status](https://gemnasium.com/rom-rb/dm-session.png)](https://gemnasium.com/rom-rb/dm-session)
-[![Code Climate](https://codeclimate.com/github/rom-rb/dm-session.png)](https://codeclimate.com/github/rom-rb/dm-session)
+[![Build Status](https://secure.travis-ci.org/rom-rb/rom-session.png?branch=master)](http://travis-ci.org/rom-rb/rom-session)
+[![Dependency Status](https://gemnasium.com/rom-rb/rom-session.png)](https://gemnasium.com/rom-rb/rom-session)
+[![Code Climate](https://codeclimate.com/github/rom-rb/rom-session.png)](https://codeclimate.com/github/rom-rb/rom-session)
 
 State machine for connecting a business object with a database record.
 
