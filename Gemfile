@@ -1,12 +1,23 @@
 source 'https://rubygems.org'
 
+module GemfileHelper
+  def self.source(name)
+    if Dir.exist?("../#{name}")
+      { :path => "../#{name}" }
+    else
+      { :git => "https://github.com/rom-rb/#{name}.git" }
+    end
+  end
+end
+
 gemspec
 
 gem 'axiom'
-gem 'rom-relation', :git => 'https://github.com/rom-rb/rom-relation.git'
-gem 'rom-mapper',   :git => 'https://github.com/rom-rb/rom-mapper.git', :branch => 'load-strategies'
 
-gem 'devtools', :git => 'https://github.com/rom-rb/devtools.git', :branch => 'mutant-0.3'
+gem 'rom-relation', GemfileHelper.source('rom-relation')
+gem 'rom-mapper',   GemfileHelper.source('rom-mapper')
+
+gem 'devtools', :git => 'https://github.com/rom-rb/devtools.git'
 eval File.read('Gemfile.devtools')
 
 group :test do
