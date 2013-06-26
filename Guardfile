@@ -14,4 +14,6 @@ guard :rspec do
 
   # run a spec if it is modified
   watch(%r{\Aspec/(?:unit|integration)/.+_spec\.rb\z})
+
+  notification :tmux, :display_message => true
 end
