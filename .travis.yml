@@ -3,10 +3,12 @@ script: 'bundle exec rake spec'
 rvm:
   - 1.9.3
   - 2.0.0
-  - ruby-head
   - jruby-19mode
-  - jruby-head
   - rbx-19mode
+  - ruby-head
+allow_failures:
+- rvm: jruby-19mode
+- rvm: ruby-head
 notifications:
   irc:
     channels:
