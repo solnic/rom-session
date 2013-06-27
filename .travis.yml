@@ -6,9 +6,10 @@ rvm:
   - jruby-19mode
   - rbx-19mode
   - ruby-head
-allow_failures:
-  - rvm: jruby-19mode
-  - rvm: ruby-head
+matrix:
+  allow_failures:
+    - rvm: jruby-19mode
+    - rvm: ruby-head
 notifications:
   irc:
     channels:
