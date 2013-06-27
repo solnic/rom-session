@@ -1,3 +1,4 @@
 ---
 name: rom-session
-namespace: 'ROM::Session*'
+namespace: 'ROM::Session'
+strategy: --rspec-unit
