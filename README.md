@@ -1,9 +1,17 @@
-session
+Ruby Object Mapper - Session
 ========
 
-[![Build Status](https://secure.travis-ci.org/rom-rb/rom-session.png?branch=master)](http://travis-ci.org/rom-rb/rom-session)
-[![Dependency Status](https://gemnasium.com/rom-rb/rom-session.png)](https://gemnasium.com/rom-rb/rom-session)
-[![Code Climate](https://codeclimate.com/github/rom-rb/rom-session.png)](https://codeclimate.com/github/rom-rb/rom-session)
+[![Gem Version](https://badge.fury.io/rb/rom-session.png)][gem]
+[![Build Status](https://travis-ci.org/rom-rb/rom-session.png?branch=master)][travis]
+[![Dependency Status](https://gemnasium.com/rom-rb/rom-session.png)][gemnasium]
+[![Code Climate](https://codeclimate.com/github/rom-rb/rom-session.png)][codeclimate]
+[![Coverage Status](https://coveralls.io/repos/rom-rb/rom-session/badge.png?branch=master)][coveralls]
+
+[gem]: https://rubygems.org/gems/rom-session
+[travis]: https://travis-ci.org/rom-rb/rom-session
+[gemnasium]: https://gemnasium.com/rom-rb/rom-session
+[codeclimate]: https://codeclimate.com/github/rom-rb/rom-session
+[coveralls]: https://coveralls.io/r/rom-rb/rom-session
 
 State machine for connecting a business object with a database record.
 
@@ -25,6 +33,7 @@ Credits
 -------
 
 * [mbj](https://github.com/mbj) Markus Schirp
+* [solnic](https://github.com/solnic) Piotr Solnica
 
 Contributing
 -------------
