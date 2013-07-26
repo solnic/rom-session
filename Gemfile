@@ -12,13 +12,14 @@ end
 
 gemspec
 
-gem 'axiom'
+gem 'axiom-memory-adapter', :git => 'https://github.com/dkubb/axiom-memory-adapter.git'
 
 gem 'rom-relation', GemfileHelper.source('rom-relation')
 gem 'rom-mapper',   GemfileHelper.source('rom-mapper')
 
 gem 'devtools', :git => 'https://github.com/rom-rb/devtools.git'
-eval File.read('Gemfile.devtools')
+
+eval_gemfile 'Gemfile.devtools'
 
 group :test do
   gem 'bogus', '~> 0.1'
