@@ -12,6 +12,7 @@ end
 
 gemspec
 
+gem 'axiom',                :git => 'https://github.com/dkubb/axiom.git'
 gem 'axiom-memory-adapter', :git => 'https://github.com/dkubb/axiom-memory-adapter.git'
 
 gem 'rom-relation', GemfileHelper.source('rom-relation')
