@@ -20,13 +20,16 @@ UncommunicativeMethodName:
   - !ruby/regexp /[0-9]$/
   - !ruby/regexp /[A-Z]/
 LongParameterList:
+  enabled: true
   max_params: 2
-  exclude: []
-  enabled: true
   overrides: {}
+  exclude:
+    - ROM::Session::IdentityMap#store
 FeatureEnvy:
-  exclude: []
   enabled: true
+  exclude:
+    - ROM::Session::ObjectNotTrackedError
+    - ROM::Proxy
 ClassVariable:
   exclude: []
   enabled: true
@@ -55,12 +58,14 @@ TooManyStatements:
 DuplicateMethodCall:
   allow_calls: []
   exclude: []
-  enabled: true
+  enabled: false
   max_calls: 1
 UtilityFunction:
-  max_helper_calls: 0
-  exclude: []
   enabled: true
+  max_helper_calls: 0
+  exclude:
+    - ROM::Session::ObjectNotTrackedError
+    - ROM::Proxy
 Attribute:
   exclude: []
   enabled: false
@@ -76,14 +81,16 @@ RepeatedConditional:
   enabled: true
   max_ifs: 1
 DataClump:
-  exclude: []
   enabled: true
   max_copies: 0
   min_clump_size: 2
+  exclude:
+    - ROM::Session::Tracker
 ControlParameter:
   exclude: []
   enabled: true
 LongYieldList:
   max_params: 0
-  exclude: []
   enabled: true
+  exclude:
+    - ROM::Session#self.start
