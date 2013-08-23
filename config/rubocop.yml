@@ -43,6 +43,3 @@ Documentation:
 
 EmptyLineBetweenDefs:
   Enabled: false # TODO: re-enable once SpecHelper.mock_model case is properly handled
-
-HashSyntax:
-  Enabled: false # TODO: enable this and update code

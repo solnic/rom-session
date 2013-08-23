@@ -5,9 +5,9 @@ source 'https://rubygems.org'
 module GemfileHelper
   def self.source(name)
     if Dir.exist?("../#{name}")
-      { :path => "../#{name}" }
+      { path: "../#{name}" }
     else
-      { :git => "https://github.com/rom-rb/#{name}.git" }
+      { git: "https://github.com/rom-rb/#{name}.git" }
     end
   end
 end
@@ -20,7 +20,7 @@ gem 'axiom-memory-adapter', '~> 0.0.2'
 gem 'rom-relation', GemfileHelper.source('rom-relation')
 gem 'rom-mapper',   GemfileHelper.source('rom-mapper')
 
-gem 'devtools', :git => 'https://github.com/rom-rb/devtools.git'
+gem 'devtools', git: 'https://github.com/rom-rb/devtools.git'
 
 group :test do
   gem 'bogus', '~> 0.1'
