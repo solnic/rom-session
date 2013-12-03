@@ -15,6 +15,7 @@ end
 gemspec
 
 gem 'axiom', '~> 0.1.1', git: 'https://github.com/dkubb/axiom.git', branch: 'master'
+gem 'axiom-optimizer', '~> 0.1.1', git: 'https://github.com/dkubb/axiom-optimizer.git', branch: 'master'
 gem 'axiom-memory-adapter', '~> 0.0.2', git: 'https://github.com/dkubb/axiom-memory-adapter.git', branch: 'master'
 
 gem 'rom-relation', GemfileHelper.source('rom-relation')
