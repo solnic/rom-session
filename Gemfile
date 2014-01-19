@@ -2,24 +2,15 @@
 
 source 'https://rubygems.org'
 
-module GemfileHelper
-  def self.source(name)
-    if Dir.exist?("../#{name}")
-      { path: "../#{name}" }
-    else
-      { git: "https://github.com/rom-rb/#{name}.git" }
-    end
-  end
-end
-
 gemspec
 
-gem 'axiom', '~> 0.1.1', git: 'https://github.com/dkubb/axiom.git', branch: 'master'
-gem 'axiom-optimizer', '~> 0.1.1', git: 'https://github.com/dkubb/axiom-optimizer.git', branch: 'master'
+gem 'adamantium', '~> 0.1', git: 'https://github.com/dkubb/adamantium.git', branch: 'master'
+gem 'axiom', '~> 0.1', git: 'https://github.com/dkubb/axiom.git', branch: 'master'
+gem 'axiom-optimizer', '~> 0.1', git: 'https://github.com/dkubb/axiom-optimizer.git', branch: 'master'
 gem 'axiom-memory-adapter', '~> 0.0.2', git: 'https://github.com/dkubb/axiom-memory-adapter.git', branch: 'master'
 
-gem 'rom-relation', GemfileHelper.source('rom-relation')
-gem 'rom-mapper',   GemfileHelper.source('rom-mapper')
+gem 'rom-relation', git: 'https://github.com/rom-rb/rom-relation.git', branch: 'master'
+gem 'rom-mapper', git: 'https://github.com/rom-rb/rom-mapper.git', branch: 'master'
 
 gem 'devtools', git: 'https://github.com/rom-rb/devtools.git'
 
